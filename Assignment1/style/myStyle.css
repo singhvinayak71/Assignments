@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "Dela Gothic One", cursive;
+    /* background-color: aquamarine; */
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    background: url(../assets/img.webp);
+    background-size: cover;
+}
+/* navbar style */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    background-color: black;
+    opacity: 0.8;
+}
+nav ul{
+    display: inherit;
+    gap: 40px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: yellow;
+    font-size: 25px;
+    font-weight: 600;
+    opacity: 1;
+}
+nav ul li a:hover{
+    font-size: 26px;
+}
+nav div{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav div img{
+    height: 55%;
+    width: 55%;
+    border-radius: 50%;
+}
+
+/* button style */
+button{
+    background-color: rgb(156, 75, 89);
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px white;
+}
+button:hover{
+    cursor: pointer;
+    font-size: 19px;
+    color: #000;
+    background-color: #fff; 
+}
+nav button{
+    margin-right: 10px;
+}
+/* main section style */
+.main{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main h1 div{
+    color: yellow;
+    font-size: 55px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+.main button{
+    margin-top: 70px;
+}
