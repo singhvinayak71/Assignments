@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,500;1,600;1,700&display=swap");
+
+* {
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(31, 24, 14);
+    /* overflow: hidden; */
+}
+
+/* navber section */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    /* height: 20%; */
+    /* background-color: aqua; */
+}
+
+.ham {
+    display: none;
+    width: 20px;
+}
+
+header ul {
+    display: flex;
+    height: 3vw;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 10px;
+    color: aliceblue;
+}
+
+header ul li:hover {
+    font-size: 22px;
+}
+
+/* intro section */
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    height: 10%;
+}
+
+.intro-left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+}
+
+.intro-left .intro-line1 {
+    display: flex;
+}
+
+.intro-left .intro-line2 h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.intro-left .intro-line2 h3 {
+    color: yellow;
+}
+
+.intro i {
+    color: blue;
+    margin-right: 5px;
+}
+
+.intro .intro-right img {
+    height: 200px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 2px 3px 5px black, -1px -2px 2px wheat;
+}
+
+/* Project section */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.divider {
+    width: 132px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.projectlists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project i {
+    font-size: 100px;
+}
+
+/* contact section */
+footer {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.divider-contact {
+    height: 10px;
+    width: 200px;
+    background-color: blue;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social i {
+    font-size: 20px;
+}
+
+@media (max-width: 765px) {
+    ul li {
+        display: none;
+    }
+    .ham{
+        display: block;
+        text-align: left;
+        width: 100vh;
+        margin-left: 10px;
+        /* float: left; */
+    }
+    .intro{
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+        flex-direction: column;
+    }
+    .intro-line1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+    }
+    .intro .intro-right img{
+        /* display: none; */
+        width: 60vw;
+    }
+    .projectlists{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 20px; 
+    }
+    .projects div h1{
+        font-size: 35px;
+    }
+    .contact div h1{
+        font-size: 35px;
+    }
+}
