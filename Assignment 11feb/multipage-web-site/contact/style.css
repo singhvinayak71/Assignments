@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f4f5;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    background-color:  #d2d7d6;
+}
+nav div{
+    display: flex;
+    align-items: center;
+
+}
+nav img{
+    width: 30px;
+    height: 30px;
+    background-color: #add5c5;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+nav ul li a:hover{
+    font-size: 21px;
+    font-weight: 600;
+}
+/* main */
+main{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form{
+    margin: 10px;
+    width: 350px;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  form h1{
+    text-align: center;
+  }
+
+  form div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  form div label{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  form div input{
+    border: transparent;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+
+  form div textarea{
+    resize: none;
+    height: 100px;
+    border: transparent;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+
+  form button{
+    border: transparent;
+    border-radius: 10px;
+    background: #20BC7E;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+  }
+  button:hover{
+    font-size: 19px;
+    cursor: pointer;
+}
